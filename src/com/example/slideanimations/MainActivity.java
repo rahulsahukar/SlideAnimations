@@ -12,6 +12,7 @@ import android.widget.Button;
 public class MainActivity extends Activity {
 
 	private Button slide = null;
+	private Button datepicker = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,17 +20,27 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		slide = (Button) findViewById(R.id.rtol);
-
 		slide.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
 
-				Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+				Intent intent = new Intent(getApplicationContext(),
+						SecondActivity.class);
 				startActivity(intent);
 
-				overridePendingTransition(R.anim.slideinleft,
-						R.anim.fadeout);
+				overridePendingTransition(R.anim.slideinleft, R.anim.fadeout);
+			}
+		});
+
+		datepicker = (Button) findViewById(R.id.datepicker);
+		datepicker.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				DatePickerFragment fragment = new DatePickerFragment();
+				fragment.show(getFragmentManager(), "date picker");
+				overridePendingTransition(R.anim.slideinleft, R.anim.fadeout);
 			}
 		});
 	}

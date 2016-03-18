@@ -25,4 +25,13 @@
         android:layout_marginTop="37dp"
         android:text="Slide Left" />
 
+    <Button
+        android:id="@+id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rtol"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="84dp"
+        android:text="Date Picker" />
+
 </RelativeLayout>

@@ -15,16 +15,18 @@ public final class R {
         public static final int abc_slide_in_top=0x7f040003;
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
-        public static final int fadein=0x7f040006;
-        public static final int fadeout=0x7f040007;
-        public static final int pushdownin=0x7f040008;
-        public static final int pushdownout=0x7f040009;
-        public static final int pushupin=0x7f04000a;
-        public static final int pushupout=0x7f04000b;
-        public static final int slideinleft=0x7f04000c;
-        public static final int slideinright=0x7f04000d;
-        public static final int slideout=0x7f04000e;
-        public static final int slideoutright=0x7f04000f;
+        public static final int dpslidedown=0x7f040006;
+        public static final int dpslideup=0x7f040007;
+        public static final int fadein=0x7f040008;
+        public static final int fadeout=0x7f040009;
+        public static final int pushdownin=0x7f04000a;
+        public static final int pushdownout=0x7f04000b;
+        public static final int pushupin=0x7f04000c;
+        public static final int pushupout=0x7f04000d;
+        public static final int slideinleft=0x7f04000e;
+        public static final int slideinright=0x7f04000f;
+        public static final int slideout=0x7f040010;
+        public static final int slideoutright=0x7f040011;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1101,13 +1103,14 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_close_button=0x7f090024;
-        public static final int action_settings=0x7f090040;
+        public static final int action_settings=0x7f090041;
         public static final int activity_chooser_view_content=0x7f090025;
         public static final int always=0x7f09000f;
         public static final int beginning=0x7f090016;
-        public static final int button1=0x7f09003f;
+        public static final int button1=0x7f090040;
         public static final int checkbox=0x7f09002d;
         public static final int collapseActionView=0x7f090010;
+        public static final int datepicker=0x7f09003e;
         public static final int default_activity_button=0x7f090028;
         public static final int dialog=0x7f090014;
         public static final int disableHome=0x7f090009;
@@ -1123,7 +1126,7 @@ containing a value of this type.
         public static final int image=0x7f090027;
         public static final int listMode=0x7f090006;
         public static final int list_item=0x7f090029;
-        public static final int ltor=0x7f09003e;
+        public static final int ltor=0x7f09003f;
         public static final int middle=0x7f090018;
         public static final int never=0x7f090012;
         public static final int none=0x7f090019;
@@ -1262,11 +1265,13 @@ containing a value of this type.
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -1487,6 +1492,7 @@ containing a value of this type.
         public static final int Widget_AppCompat_ProgressBar=0x7f0b000a;
         public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b0009;
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b0022;
+        public static final int dialog_animation_fade=0x7f0b008d;
     }
     public static final class styleable {
         /**  ============================================ 
